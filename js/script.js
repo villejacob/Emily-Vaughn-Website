@@ -1,9 +1,20 @@
-// $('video').bind('ended', function(){
-//    $(this).fadeOut()
-// })
+var video = $('video')[0];
 
+// Attach a "timeupdate" event to the video
+video.addEventListener("timeupdate", getCurrentTime);
+
+// Display title once video slows
+function getCurrentTime() { 
+	if (video.currentTime > 2.2){
+		$('#emily-name').show();
+	};
+};
+
+// Fade to pink once video is finished
 $('video').bind('ended', function(){
 	$(this).fadeOut(1800);
+	// $('#emily-name').addClass('slide-up');
+	$('.link').show();
 });
 
 // Fix iOS bugs

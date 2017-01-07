@@ -38,9 +38,54 @@ html, body {
 }
 
 .landing-inner img {
-	/*display: none;*/
-	width: 60vw;
+	position: absolute;
+	display: none;
 	height: auto;
-	margin: 48vh 20vw;
+	transition: all 2s ease-in-out;
+	-webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+	-moz-transition: all 2s ease-in-out; /** Firefox **/
+	-o-transition: all 2s ease-in-out; /** Opera **/
+}
 
+#emily-name {
+	width: 60vw;
+	top: 15.4vh;
+	margin-left: 20vw;
+	margin-right: 20vw;
+}
+
+#spotify {
+	width: 18.6vw;
+	top: 35.5vh;
+	margin-left: 40.7vw;
+	margin-right: 40.7vw;
+}
+
+#apple-music {
+	width: 29.3vw;
+	top: 49.4vh;
+	margin-left: 35.35vw;
+	margin-right: 35.35vw;
+}
+
+#twitter {
+	width: 19.4vw;
+	top: 63.3vh;
+	margin-left: 40.3vw;
+	margin-right: 40.3vw;
+}
+
+#instagram {
+	width: 27.2vw;
+	top: 77.2vh;
+	margin-left: 36.4vw;
+	margin-right: 36.4vw;
+}
+
+.slide-up {
+	transform: translate(0,-200px);
+}
+
+.slide-in {
+	transform: translate();
 }
