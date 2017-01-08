@@ -4,78 +4,86 @@ html, body {
 	width: 100vw;
 }
 
-.landing {
+section.landing {
 	position: relative;
 	overflow: hidden;
 	width: inherit;
 	height: inherit;
+    background-color: #F9CFD6;
 }
 
-.video-bg {
+div.video-bg {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: block;
-    background-color: #F9CFD6;
 }
 
-.video-bg video {
+div.video-bg video {
+    position: absolute;
     min-width: auto;
     min-height: 100%;
     width: auto;
     height: 100vh;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.landing-inner {
-    position: absolute;
+div.landing-inner {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
 	visibility: hidden;
 }
 
-.landing-inner img {
-	position: absolute;
+div.landing-inner img {
+	width: inherit;
 	height: auto;
 }
 
-.landing-inner a {
-	display: inline-block;
+div.landing-inner a {
+	position: absolute;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
 }
 
-#emily-name {
-	width: 60vw;
-	top: 15.4vh;
-	margin-left: 20vw;
-	margin-right: 20vw;
-}
-
-#spotify {
+a#spotify {
 	width: 18.6vw;
 	top: 35.5vh;
 	margin-left: 40.7vw;
 	margin-right: 40.7vw;
 }
 
-#apple-music {
+img#emily-name {
+	position: absolute;
+	width: 60vw;
+	top: 15.4vh;
+	display: block;
+	margin-left: 20vw;
+	margin-right: 20vw;
+}
+
+a#apple-music {
 	width: 29.3vw;
 	top: 49.4vh;
 	margin-left: 35.35vw;
 	margin-right: 35.35vw;
 }
 
-#twitter {
+a#twitter {
 	width: 19.4vw;
 	top: 63.3vh;
 	margin-left: 40.3vw;
 	margin-right: 40.3vw;
 }
 
-#instagram {
+a#instagram {
 	width: 27.2vw;
 	top: 77.2vh;
 	margin-left: 36.4vw;
