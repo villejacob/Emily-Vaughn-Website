@@ -3,17 +3,18 @@ var video = $('video')[0];
 // Attach a "timeupdate" event to the video
 video.addEventListener("timeupdate", getCurrentTime);
 
-// Display title once video slows
+// Transition based on the playback time
 function getCurrentTime() { 
-	if (video.currentTime > 2.2){
-		$('#emily-name').css('visibility', 'visible');
-	};
+	// Display Emily's name at the dope slow motion bat swing
+	if (video.currentTime > 2.2){ $('#emily-name').css('visibility', 'visible'); }
+	// Fade to pink before reaching end of video
+	if (video.currentTime > 4.8){ $('video').fadeOut(1800); }
 };
 
-// Fade to pink once video is finished
+// Animate text once video ends
 $('video').bind('ended', function(){
-	$(this).fadeOut(1800);
-	$('.landing-inner a').css('visibility', 'visible');
+	$('#emily-name').css('top', '15.4vh');
+	$('.landing-inner').css('visibility', 'visible');
 });
 
 // Fix iOS bugs

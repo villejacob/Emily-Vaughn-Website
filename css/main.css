@@ -53,41 +53,38 @@ div.landing-inner a {
 	padding-bottom: 5px;
 }
 
-a#spotify {
-	width: 18.6vw;
-	top: 35.5vh;
-	margin-left: 40.7vw;
-	margin-right: 40.7vw;
-}
-
 img#emily-name {
 	position: absolute;
 	width: 60vw;
-	top: 15.4vh;
+	top: 48vh;
 	display: block;
-	margin-left: 20vw;
-	margin-right: 20vw;
+	margin: auto 20vw;
+	-webkit-transition: top 2s ease-in-out;
+	transition: top 2s ease-in-out;
+}
+
+a#spotify {
+	width: 18.6vw;
+	top: 35.5vh;
+	margin: auto 40.7vw;
 }
 
 a#apple-music {
 	width: 29.3vw;
 	top: 49.4vh;
-	margin-left: 35.35vw;
-	margin-right: 35.35vw;
+	margin: auto 35.35vw;
 }
 
 a#twitter {
 	width: 19.4vw;
 	top: 63.3vh;
-	margin-left: 40.3vw;
-	margin-right: 40.3vw;
+	margin: auto 40.3vw;
 }
 
 a#instagram {
 	width: 27.2vw;
 	top: 77.2vh;
-	margin-left: 36.4vw;
-	margin-right: 36.4vw;
+	margin: auto 36.4vw;
 }
 
 /* Underline From Left */
