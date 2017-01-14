@@ -9,27 +9,29 @@ section.landing {
 	overflow: hidden;
 	width: inherit;
 	height: inherit;
-    background-color: #F9CFD6;
+  background-color: #F9CFD6;
 }
 
 div.video-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
 }
 
 div.video-bg video {
-    position: absolute;
-    min-width: auto;
-    min-height: 100%;
-    width: auto;
-    height: 100vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  min-width: auto;
+  min-height: 100%;
+  width: auto;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 1.8s;
+  transition: opacity 1.8s;
 }
 
 div.landing-inner {
@@ -37,7 +39,7 @@ div.landing-inner {
     height: 100vh;
     width: 100vw;
     text-align: center;
-	visibility: hidden;
+    visibility: hidden;
 }
 
 div.landing-inner img {
@@ -59,32 +61,35 @@ img#emily-name {
 	top: 48vh;
 	display: block;
 	margin: auto 20vw;
-	-webkit-transition: top 2s ease-in-out;
-	transition: top 2s ease-in-out;
+	-webkit-transition: top 1.8s ease-in-out .6s;
+	transition: top 1.8s ease-in-out .6s;
+  
 }
 
 a#spotify {
 	width: 18.6vw;
 	top: 35.5vh;
 	margin: auto 40.7vw;
+/*  -webkit-transition: all 1s ease .8s;
+  transition: all 1s ease .8s;*/
 }
 
 a#apple-music {
-	width: 29.3vw;
-	top: 49.4vh;
-	margin: auto 35.35vw;
+  width: 29.3vw;
+  top: 49.4vh;
+  margin: auto 35.35vw;
 }
 
 a#twitter {
-	width: 19.4vw;
-	top: 63.3vh;
-	margin: auto 40.3vw;
+  width: 19.4vw;
+  top: 63.3vh;
+  margin: auto 40.3vw;
 }
 
 a#instagram {
-	width: 27.2vw;
-	top: 77.2vh;
-	margin: auto 36.4vw;
+  width: 27.2vw;
+  top: 77.2vh;
+  margin: auto 36.4vw;
 }
 
 /* Underline From Left */

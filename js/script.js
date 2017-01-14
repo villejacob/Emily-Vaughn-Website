@@ -8,13 +8,19 @@ function getCurrentTime() {
 	// Display Emily's name at the dope slow motion bat swing
 	if (video.currentTime > 2.2){ $('#emily-name').css('visibility', 'visible'); }
 	// Fade to pink before reaching end of video
-	if (video.currentTime > 4.8){ $('video').fadeOut(1800); }
+	if (video.currentTime > 4.8){ $('video').css('opacity', '0'); }
 };
 
 // Animate text once video ends
 $('video').bind('ended', function(){
 	$('#emily-name').css('top', '15.4vh');
-	$('.landing-inner').css('visibility', 'visible');
+	$('.landing-inner')
+		.delay(2400)
+		.queue(function(next){
+			$(this).css('visibility', 'visible');
+			next();
+		});
+	// $('a#spotify').css('margin', 'auto 40.7vw');
 });
 
 // Fix iOS bugs
