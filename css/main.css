@@ -9,7 +9,7 @@ section.landing {
 	overflow: hidden;
 	width: inherit;
 	height: inherit;
-  background-color: #F9CFD6;
+  background-color: #000;
 }
 
 div.video-bg {
@@ -23,15 +23,13 @@ div.video-bg {
 
 div.video-bg video {
   position: absolute;
-  min-width: auto;
-  min-height: 100%;
-  width: auto;
-  height: 100vh;
+  width: 100vw;
+  min-width: 130vh;
+  /*min-height: 100%;*/
+  /*height: 100vh;*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transition: opacity 1.8s;
-  transition: opacity 1.8s;
 }
 
 div.landing-inner {
@@ -57,21 +55,18 @@ div.landing-inner a {
 
 img#emily-name {
 	position: absolute;
-	width: 60vw;
+	/*height: 3.6vh;*/
+  /*width: auto;*/
+  width: 80vw;
 	top: 48vh;
 	display: block;
 	margin: auto 20vw;
-	-webkit-transition: top 1.8s ease-in-out .6s;
-	transition: top 1.8s ease-in-out .6s;
-  
 }
 
 a#spotify {
 	width: 18.6vw;
 	top: 35.5vh;
 	margin: auto 40.7vw;
-/*  -webkit-transition: all 1s ease .8s;
-  transition: all 1s ease .8s;*/
 }
 
 a#apple-music {
