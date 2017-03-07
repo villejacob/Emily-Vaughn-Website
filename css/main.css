@@ -25,8 +25,6 @@ div.video-bg video {
   position: absolute;
   width: 100vw;
   min-width: 130vh;
-  /*min-height: 100%;*/
-  /*height: 100vh;*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -53,14 +51,71 @@ div.landing-inner a {
 	padding-bottom: 5px;
 }
 
+/*TODO: Mobile sizing 70vw*/
+/*img#emily-name {
+  position: absolute;
+  width: 50vw;
+  height: auto;
+  top: 48vh;
+  display: block;
+  margin: auto 25vw;
+  animation-name: glitch;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(../content/images/video-inner.png) no-repeat;
+  background-size: cover;
+}*/
 img#emily-name {
-	position: absolute;
-	/*height: 3.6vh;*/
-  /*width: auto;*/
-  width: 80vw;
-	top: 48vh;
-	display: block;
-	margin: auto 20vw;
+  position: relative;
+  top: 48vh;
+  width: 50vw;
+  height: 2.83vw;
+  box-sizing: border-box;
+  padding-left: 50vw;
+  background: url(../content/images/name.png);
+  background-size: 50vw;
+  background-repeat: no-repeat;
+}
+
+img#emily-name:hover {
+  animation-name: glitch-name;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.glitch-out {
+  animation-name: glitch-out;
+  animation-duration: 0.5s;
+}
+
+.glitch-in {
+  animation-name: glitch-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes glitch-name {
+  0%    {background: url(../content/images/name.png); background-size: 50vw;}
+  8%    {background: url(../content/images/name/f1.png); background-size: 50vw;}
+  24%   {background: url(../content/images/name/f2.png); background-size: 50vw;}
+  36%   {background: url(../content/images/name/f3.png); background-size: 50vw;}
+  50%   {background: url(../content/images/name/f4.png); background-size: 50vw;}
+  60%   {background: url(../content/images/name/f5.png); background-size: 50vw;}
+  78%   {background: url(../content/images/name/f6.png); background-size: 50vw;}
+  83%   {background: url(../content/images/name/f7.png); background-size: 50vw;}
+  100%  {background: url(../content/images/name/f8.png); background-size: 50vw;}
+}
+@keyframes glitch-out {
+  0%    {background: url(../content/images/name/f1.png); background-size: 50vw;}
+  24%   {background: url(../content/images/name/f2.png); background-size: 50vw;}
+  67%   {background: url(../content/images/name/f3.png); background-size: 50vw;}
+  100%  {background: url(../content/images/name/f4.png); background-size: 50vw;}
+}
+
+@keyframes glitch-in {
+  0%    {background: url(../content/images/name/f5.png); background-size: 50vw;}
+  33%   {background: url(../content/images/name/f6.png); background-size: 50vw;}
+  76%   {background: url(../content/images/name/f7.png); background-size: 50vw;}
+  100%  {background: url(../content/images/name/f8.png); background-size: 50vw;}
 }
 
 a#spotify {
@@ -87,59 +142,3 @@ a#instagram {
   margin: auto 36.4vw;
 }
 
-/* Underline From Left */
-.hvr-underline-from-left {
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  overflow: hidden;
-}
-.hvr-underline-from-left:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: #FFF;
-  height: 1px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-  right: 0;
-}
-
-/* Underline From Right */
-.hvr-underline-from-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  overflow: hidden;
-}
-.hvr-underline-from-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 100%;
-  right: 0;
-  bottom: 0;
-  background: #2098D1;
-  height: 4px;
-  -webkit-transition-property: left;
-  transition-property: left;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
-  left: 0;
-}
