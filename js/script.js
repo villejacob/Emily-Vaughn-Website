@@ -2,6 +2,7 @@
 $('video').bind('ended', function(){
 	function showLinks() {
 		$('#emily-name').removeClass("glitch-in");
+		$('#emily-name').addClass("hvr-name");
 		$('.landing-inner').css('visibility', 'visible');
 	}
 	function glitchIn() {
