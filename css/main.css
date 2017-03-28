@@ -48,7 +48,6 @@ div.landing-inner a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-  padding-bottom: 5px;
 }
 
 /*TODO: Mobile sizing 70vw*/
@@ -72,7 +71,7 @@ a#spotify {
 
 #spotify img{
   position: relative;
-  height: 2.2vw;
+  height: 2.8vw;
   box-sizing: border-box;
   padding-left: 26vw;
   background: url(../content/images/spotify/spotify.png);
@@ -88,7 +87,7 @@ a#apple-music {
 
 #apple-music img {
   position: relative;
-  height: 2.2vw;
+  height: 2.8vw;
   box-sizing: border-box;
   padding-left: 41.1vw;
   background: url(../content/images/apple-music/apple-music.png);
@@ -104,7 +103,7 @@ a#twitter {
 
 #twitter img{
   position: relative;
-  height: 2.2vw;
+  height: 2.8vw;
   box-sizing: border-box;
   padding-left: 26vw;
   background: url(../content/images/twitter/twitter.png);
@@ -120,7 +119,7 @@ a#instagram {
 
 #instagram img{
   position: relative;
-  height: 2.2vw;
+  height: 2.8vw;
   box-sizing: border-box;
   padding-left: 35.2vw;
   background: url(../content/images/instagram/instagram.png);
