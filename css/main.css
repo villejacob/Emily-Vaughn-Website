@@ -48,7 +48,7 @@ div.landing-inner a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 /*TODO: Mobile sizing 70vw*/
@@ -59,7 +59,7 @@ img#emily-name {
   height: 2.83vw;
   box-sizing: border-box;
   padding-left: 50vw;
-  background: url(../content/images/name.png);
+  background: url(../content/images/name/name.png);
   background-size: 50vw;
   background-repeat: no-repeat;
 }
@@ -68,6 +68,46 @@ img#emily-name:hover {
   animation-name: glitch-name;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+a#spotify {
+	width: 26vw;
+	top: 35.5vh;
+	margin: auto 37vw;
+}
+
+#spotify img{
+  position: relative;
+  height: 2.2vw;
+  box-sizing: border-box;
+  padding-left: 26vw;
+  background: url(../content/images/spotify/spotify.png);
+  background-size: 26vw;
+  background-repeat: no-repeat;
+}
+
+#spotify img:hover{
+  animation-name: glitch-spotify;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+a#apple-music {
+  width: 29.3vw;
+  top: 49.4vh;
+  margin: auto 35.35vw;
+}
+
+a#twitter {
+  width: 19.4vw;
+  top: 63.3vh;
+  margin: auto 40.3vw;
+}
+
+a#instagram {
+  width: 27.2vw;
+  top: 77.2vh;
+  margin: auto 36.4vw;
 }
 
 .glitch-out {
@@ -102,6 +142,28 @@ img#emily-name:hover {
   100%   {background: url(../content/images/name/f28-min.png); background-size: 50vw;}
 }
 
+@keyframes glitch-spotify {
+  0%    {background: url(../content/images/spotify/f24-min.png); background-size: 26vw;}
+  5%   {background: url(../content/images/spotify/f5-min.png); background-size: 26vw;}
+  11%   {background: url(../content/images/spotify/f3-min.png); background-size: 26vw;}
+  16%    {background: url(../content/images/spotify/f16-min.png); background-size: 26vw;}
+  22%   {background: url(../content/images/spotify/f25-min.png); background-size: 26vw;}
+  27%   {background: url(../content/images/spotify/f26-min.png); background-size: 26vw;}
+  33%   {background: url(../content/images/spotify/f19-min.png); background-size: 26vw;}
+  38%   {background: url(../content/images/spotify/f9-min.png); background-size: 26vw;}
+  44%    {background: url(../content/images/spotify/f7-min.png); background-size: 26vw;}
+  49%   {background: url(../content/images/spotify/f18-min.png); background-size: 26vw;}
+  55%   {background: url(../content/images/spotify/f13-min.png); background-size: 26vw;}
+  60%    {background: url(../content/images/spotify/f20-min.png); background-size: 26vw;}
+  66%   {background: url(../content/images/spotify/f17-min.png); background-size: 26vw;}
+  71%   {background: url(../content/images/spotify/f21-min.png); background-size: 26vw;}
+  77%   {background: url(../content/images/spotify/f15-min.png); background-size: 26vw;}
+  82%   {background: url(../content/images/spotify/f10-min.png); background-size: 26vw;}
+  88%    {background: url(../content/images/spotify/f23-min.png); background-size: 26vw;}
+  94%   {background: url(../content/images/spotify/f8-min.png); background-size: 26vw;}
+  100%   {background: url(../content/images/spotify/f2-min.png); background-size: 26vw;}
+}
+
 @keyframes glitch-out {
   0%   {background: url(../content/images/name/f4-min.png); background-size: 50vw;}
   25%    {background: url(../content/images/name/f5-min.png); background-size: 50vw;}
@@ -116,29 +178,5 @@ img#emily-name:hover {
   50%    {background: url(../content/images/name/f17-min.png); background-size: 50vw;}
   75%   {background: url(../content/images/name/f20-min.png); background-size: 50vw;}
   100%   {background: url(../content/images/name/f22-min.png); background-size: 50vw;}
-}
-
-a#spotify {
-	width: 18.6vw;
-	top: 35.5vh;
-	margin: auto 40.7vw;
-}
-
-a#apple-music {
-  width: 29.3vw;
-  top: 49.4vh;
-  margin: auto 35.35vw;
-}
-
-a#twitter {
-  width: 19.4vw;
-  top: 63.3vh;
-  margin: auto 40.3vw;
-}
-
-a#instagram {
-  width: 27.2vw;
-  top: 77.2vh;
-  margin: auto 36.4vw;
 }
 
