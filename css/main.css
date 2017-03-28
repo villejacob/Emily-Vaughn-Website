@@ -64,12 +64,6 @@ img#emily-name {
   background-repeat: no-repeat;
 }
 
-img#emily-name:hover {
-  animation-name: glitch-name;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-
 a#spotify {
 	width: 26vw;
 	top: 35.5vh;
@@ -84,12 +78,6 @@ a#spotify {
   background: url(../content/images/spotify/spotify.png);
   background-size: 26vw;
   background-repeat: no-repeat;
-}
-
-#spotify img:hover {
-  animation-name: glitch-spotify;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
 }
 
 a#apple-music {
@@ -108,22 +96,66 @@ a#apple-music {
   background-repeat: no-repeat;
 }
 
+a#twitter {
+  width: 26vw;
+  top: 63.3vh;
+  margin: auto 37vw;
+}
+
+#twitter img{
+  position: relative;
+  height: 2.2vw;
+  box-sizing: border-box;
+  padding-left: 26vw;
+  background: url(../content/images/twitter/twitter.png);
+  background-size: 26vw;
+  background-repeat: no-repeat;
+}
+
+a#instagram {
+  width: 35.2vw;
+  top: 77.2vh;
+  margin: auto 32.4vw;
+}
+
+#instagram img{
+  position: relative;
+  height: 2.2vw;
+  box-sizing: border-box;
+  padding-left: 35.2vw;
+  background: url(../content/images/instagram/instagram.png);
+  background-size: 35.2vw;
+  background-repeat: no-repeat;
+}
+
+img.hvr-name:hover {
+  animation-name: glitch-name;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#spotify img:hover {
+  animation-name: glitch-spotify;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 #apple-music img:hover {
   animation-name: glitch-apple-music;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
-a#twitter {
-  width: 19.4vw;
-  top: 63.3vh;
-  margin: auto 40.3vw;
+#twitter img:hover {
+  animation-name: glitch-twitter;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
-a#instagram {
-  width: 27.2vw;
-  top: 77.2vh;
-  margin: auto 36.4vw;
+#instagram img:hover {
+  animation-name: glitch-instagram;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .glitch-out {
@@ -184,7 +216,7 @@ a#instagram {
   0%    {background: url(../content/images/apple-music/f25-min.png); background-size: 41.1vw;}
   5%   {background: url(../content/images/apple-music/f13-min.png); background-size: 41.1vw;}
   11%   {background: url(../content/images/apple-music/f14-min.png); background-size: 41.1vw;}
-  16%    {background: url(../content/imagesapple-musicy/f19-min.png); background-size: 41.1vw;}
+  16%    {background: url(../content/images/apple-music/f19-min.png); background-size: 41.1vw;}
   22%   {background: url(../content/images/apple-music/f22-min.png); background-size: 41.1vw;}
   27%   {background: url(../content/images/apple-music/f16-min.png); background-size: 41.1vw;}
   33%   {background: url(../content/images/apple-music/f24-min.png); background-size: 41.1vw;}
@@ -200,6 +232,50 @@ a#instagram {
   88%    {background: url(../content/images/apple-music/f2-min.png); background-size: 41.1vw;}
   94%   {background: url(../content/images/apple-music/f15-min.png); background-size: 41.1vw;}
   100%   {background: url(../content/images/apple-music/f5-min.png); background-size: 41.1vw;}
+}
+
+@keyframes glitch-twitter {
+  0%    {background: url(../content/images/twitter/f22-min.png); background-size: 26vw;}
+  5%   {background: url(../content/images/twitter/f12-min.png); background-size: 26vw;}
+  11%   {background: url(../content/images/twitter/f9-min.png); background-size: 26vw;}
+  16%    {background: url(../content/images/twitter/f5-min.png); background-size: 26vw;}
+  22%   {background: url(../content/images/twitter/f21-min.png); background-size: 26vw;}
+  27%   {background: url(../content/images/twitter/f8-min.png); background-size: 26vw;}
+  33%   {background: url(../content/images/twitter/f4-min.png); background-size: 26vw;}
+  38%   {background: url(../content/images/twitter/f14-min.png); background-size: 26vw;}
+  44%    {background: url(../content/images/twitter/f20-min.png); background-size: 26vw;}
+  49%   {background: url(../content/images/twitter/f19-min.png); background-size: 26vw;}
+  55%   {background: url(../content/images/twitter/f13-min.png); background-size: 26vw;}
+  60%    {background: url(../content/images/twitter/f28-min.png); background-size: 26vw;}
+  66%   {background: url(../content/images/twitter/f17-min.png); background-size: 26vw;}
+  71%   {background: url(../content/images/twitter/f6-min.png); background-size: 26vw;}
+  77%   {background: url(../content/images/twitter/f25-min.png); background-size: 26vw;}
+  82%   {background: url(../content/images/twitter/f23-min.png); background-size: 26vw;}
+  88%    {background: url(../content/images/twitter/f24-min.png); background-size: 26vw;}
+  94%   {background: url(../content/images/twitter/f7-min.png); background-size: 26vw;}
+  100%   {background: url(../content/images/twitter/f16-min.png); background-size: 26vw;}
+}
+
+@keyframes glitch-instagram {
+  0%    {background: url(../content/images/instagram/f17-min.png); background-size: 35.2vw;}
+  5%   {background: url(../content/images/instagram/f3-min.png); background-size: 35.2vw;}
+  11%   {background: url(../content/images/instagram/f2-min.png); background-size: 35.2vw;}
+  16%    {background: url(../content/images/instagram/f14-min.png); background-size: 35.2vw;}
+  22%   {background: url(../content/images/instagram/f10-min.png); background-size: 35.2vw;}
+  27%   {background: url(../content/images/instagram/f24-min.png); background-size: 35.2vw;}
+  33%   {background: url(../content/images/instagram/f15-min.png); background-size: 35.2vw;}
+  38%   {background: url(../content/images/instagram/f22-min.png); background-size: 35.2vw;}
+  44%    {background: url(../content/images/instagram/f16-min.png); background-size: 35.2vw;}
+  49%   {background: url(../content/images/instagram/f5-min.png); background-size: 35.2vw;}
+  55%   {background: url(../content/images/instagram/f13-min.png); background-size: 35.2vw;}
+  60%    {background: url(../content/images/instagram/f20-min.png); background-size: 35.2vw;}
+  66%   {background: url(../content/images/instagram/f8-min.png); background-size: 35.2vw;}
+  71%   {background: url(../content/images/instagram/f28-min.png); background-size: 35.2vw;}
+  77%   {background: url(../content/images/instagram/f26-min.png); background-size: 35.2vw;}
+  82%   {background: url(../content/images/instagram/f18-min.png); background-size: 35.2vw;}
+  88%    {background: url(../content/images/instagram/f4-min.png); background-size: 35.2vw;}
+  94%   {background: url(../content/images/instagram/f23-min.png); background-size: 35.2vw;}
+  100%   {background: url(../content/images/instagram/f12-min.png); background-size: 35.2vw;}
 }
 
 @keyframes glitch-out {
