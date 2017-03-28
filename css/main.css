@@ -86,16 +86,32 @@ a#spotify {
   background-repeat: no-repeat;
 }
 
-#spotify img:hover{
+#spotify img:hover {
   animation-name: glitch-spotify;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
 a#apple-music {
-  width: 29.3vw;
+  width: 41.1vw;
   top: 49.4vh;
-  margin: auto 35.35vw;
+  margin: auto 29.45vw;
+}
+
+#apple-music img {
+  position: relative;
+  height: 2.2vw;
+  box-sizing: border-box;
+  padding-left: 41.1vw;
+  background: url(../content/images/apple-music/apple-music.png);
+  background-size: 41.1vw;
+  background-repeat: no-repeat;
+}
+
+#apple-music img:hover {
+  animation-name: glitch-apple-music;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 a#twitter {
@@ -162,6 +178,28 @@ a#instagram {
   88%    {background: url(../content/images/spotify/f23-min.png); background-size: 26vw;}
   94%   {background: url(../content/images/spotify/f8-min.png); background-size: 26vw;}
   100%   {background: url(../content/images/spotify/f2-min.png); background-size: 26vw;}
+}
+
+@keyframes glitch-apple-music {
+  0%    {background: url(../content/images/apple-music/f25-min.png); background-size: 41.1vw;}
+  5%   {background: url(../content/images/apple-music/f13-min.png); background-size: 41.1vw;}
+  11%   {background: url(../content/images/apple-music/f14-min.png); background-size: 41.1vw;}
+  16%    {background: url(../content/imagesapple-musicy/f19-min.png); background-size: 41.1vw;}
+  22%   {background: url(../content/images/apple-music/f22-min.png); background-size: 41.1vw;}
+  27%   {background: url(../content/images/apple-music/f16-min.png); background-size: 41.1vw;}
+  33%   {background: url(../content/images/apple-music/f24-min.png); background-size: 41.1vw;}
+  38%   {background: url(../content/images/apple-music/f4-min.png); background-size: 41.1vw;}
+  44%    {background: url(../content/images/apple-music/f6-min.png); background-size: 41.1vw;}
+  49%   {background: url(../content/images/apple-music/f12-min.png); background-size: 41.1vw;}
+  55%   {background: url(../content/images/apple-music/f18-min.png); background-size: 41.1vw;}
+  60%    {background: url(../content/images/apple-music/f3-min.png); background-size: 41.1vw;}
+  66%   {background: url(../content/images/apple-music/f28-min.png); background-size: 41.1vw;}
+  71%   {background: url(../content/images/apple-music/f11-min.png); background-size: 41.1vw;}
+  77%   {background: url(../content/images/apple-music/f23-min.png); background-size: 41.1vw;}
+  82%   {background: url(../content/images/apple-music/f20-min.png); background-size: 41.1vw;}
+  88%    {background: url(../content/images/apple-music/f2-min.png); background-size: 41.1vw;}
+  94%   {background: url(../content/images/apple-music/f15-min.png); background-size: 41.1vw;}
+  100%   {background: url(../content/images/apple-music/f5-min.png); background-size: 41.1vw;}
 }
 
 @keyframes glitch-out {
