@@ -1,4 +1,5 @@
 // Transition to links. Video -> Name -> Links
+/*
 $('video').bind('ended', function(){
 	function showLinks() {
 		$('#emily-name').removeClass("glitch-in");
@@ -22,6 +23,7 @@ $('video').bind('ended', function(){
 	$('video').css('opacity', '0');	
 	setTimeout(showName, 400);
 });
+*/
 
 // Testing animation
 // $('#emily-name').css('visibility', 'visible');
